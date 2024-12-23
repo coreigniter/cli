@@ -1,0 +1,32 @@
+{
+    "name": "coreigniter/cli",
+    "description": "CoreIgniter CLI (Command Line Interface)",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "CoreIgniter\\Cli\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/spark"
+    ],
+    "authors": [
+        {
+            "name": "Antoan Valchev",
+            "email": "antoan@valchev.io"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../core",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "coreigniter/core": "@dev"
+    }
+}
